@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Selam 🤍</title>
+  <style>
+    body {
+      background: #ffffff; /* Arka plan beyaz */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: Arial, sans-serif; /* Daha düzgün font */
+      color: #222;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 1em;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #3c8527;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0px 5px 0px #2c621c;
+      transition: 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+      background: #4fa337;
+    }
+    .heart {
+      font-size: 1.5em;
+      margin-top: 20px;
+      display: none;
+      color: #d63384;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selam canım 🤍 Minecraft’ta birlikteyiz!</h1>
+  <button onclick="showLove()">Selam De 👋</button>
+  <div class="heart" id="heart">💖 Seni seviyorum 💖</div>
+
+  <script>
+    function showLove() {
+      document.getElementById("heart").style.display = "block";
+    }
+  </script>
+</body>
+</html>
